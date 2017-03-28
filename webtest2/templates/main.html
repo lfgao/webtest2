@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="utf-8">
+    <title> Test web </title>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link href="{{ url_for('static', filename='css/bootstrap.min.css')}}" rel="stylesheet">
+    <link rel="shortcut icon" href="{{ url_for('static', filename='favicon.ico')}}" rel="stylesheet">
+</head>
+</html>
+
+<header>
+
+    <div class="navbar-header">
+      <a class="navbar-brand" href="/">
+          <img style = "max-width:120px" src="{{ url_for('static', filename = 'images/testimg.png') }}">
+      </a>
+    </div>
+<ul class="nav nav-pills">
+  <a href="/dashboard/">
+  <li role="presentation" class="active">Home</li>
+  </a>
+</ul>
+</header>
